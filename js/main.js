@@ -1,9 +1,11 @@
-$(document).ready(function () {
-    $('.grid').masonry({
-        itemSelector: '.grid-item',
-        gutter: 18,
-    });
-});
+window.onload = function() {
+    var elem = document.querySelector('.grid');
+	var msnry = new Masonry( elem, {
+  	// options
+  	itemSelector: '.grid-item',
+  	gutter: 18,
+	});
+ };
 
 $(document).ready(function () {
     $(".header_contacts").click(() => $('html,body').animate({
