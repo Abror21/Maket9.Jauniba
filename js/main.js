@@ -56,7 +56,7 @@ FAQBodyCollapses.forEach(collapse => {
         }
         collapse.classList.toggle('active')
         if(collapse.classList.contains('active')){
-            collapse.children[1].style.maxHeight = collapse.children[1].srollHeight + 'px';
+            collapse.children[1].style.maxHeight = collapse.children[1].scrollHeight + 'px';
         }else{
             collapse.children[1].style.maxHeight = 0;
         }
