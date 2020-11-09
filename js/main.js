@@ -48,11 +48,9 @@ FAQBodyCollapses.forEach(collapse => {
     collapse.addEventListener('click', function () {
         
         const currentlyActiveCollapse = document.querySelector('.FAQ_body-collapse.active');
-        console.log(currentlyActiveCollapse)
         if(currentlyActiveCollapse && currentlyActiveCollapse !== collapse){
-            console.log(collapse.children[1].scrollHeight)
-            collapse.classList.remove('active');
-            collapse.children[1].style.maxHeight = 0;
+            currentlyActiveCollapse.classList.remove('active');
+            currentlyActiveCollapse.children[1].style.maxHeight = 0;
         }
         collapse.classList.toggle('active')
         if(collapse.classList.contains('active')){
